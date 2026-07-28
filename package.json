@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-torrent-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web-based torrent downloader powered by Node.js and WebTorrent",
+  "scripts": {
+    "start": "concurrently -n backend,frontend -c cyan,magenta \"yarn --cwd backend start\" \"yarn --cwd frontend start\"",
+    "install:all": "yarn install && yarn --cwd backend install && yarn --cwd frontend install",
+    "dev": "yarn start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
