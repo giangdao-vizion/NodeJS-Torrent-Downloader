@@ -7,3 +7,6 @@ backend/downloads/*
 .env
 .env.*
 .vite/
+
+# CodeGraph local index
+.codegraph/
